@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+import * as mongoose from "mongoose";
 
-module.exports = {
+const userSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
@@ -14,4 +14,6 @@ module.exports = {
     updatedAt: {
         type: Date
     },
-};
+});
+
+export default userSchema;

@@ -2,9 +2,13 @@
   "name": "demo-of-base-api",
   "version": "0.0.1",
   "description": "demo API on of-base-api",
-  "main": "app.js",
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 8.9.0"
+  },
+  "main": "src/app.js",
   "scripts": {
-    "start": "DEBUG=* node app.js",
+    "start": "DEBUG=* ts-node ./src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Aleksey Bartashevich <alexey.bartashevich@codex-soft.com>",
@@ -15,6 +19,13 @@
     "debug": "3.1.0"
   },
   "devDependencies": {
-    "mongoose": "4.13.9"
+    "@types/node": "~8.5.8",
+    "@types/mongoose": "^4.7.18",
+    "jest": "~22.1.1",
+    "mongoose": "4.13.9",
+    "ts-node": "4.1.0",
+    "tslint": "~5.9.1",
+    "tslint-microsoft-contrib": "~5.0.2",
+    "typescript": "~2.6.2"
   }
 }

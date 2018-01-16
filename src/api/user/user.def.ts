@@ -1,4 +1,4 @@
-module.exports = {
+const def = {
     definitions: {
         User: {
             properties: {
@@ -14,6 +14,9 @@ module.exports = {
                     type: 'number'
                 },
                 createdAt: {
+                    type: 'date'
+                },
+                updatedAt: {
                     type: 'date'
                 }
             }
@@ -137,3 +140,5 @@ module.exports = {
         }
     }
 };
+
+export default def;
